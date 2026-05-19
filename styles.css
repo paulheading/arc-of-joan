@@ -1,0 +1,115 @@
+:root {
+  --color-font: white;
+  --color-bg: black;
+  --color-main: rgba(0, 0, 0, 0.8);
+  --font-size-body-sm: 120%;
+  --font-size-body-md: 150%;
+  --font-family: 'Handwriting', 'Courier New', Courier, monospace;
+  --image-bg-sm: url('./assets/mill_520x768.webp');
+  --image-bg-md: url('./assets/mill_1024x800.webp');
+  --image-bg-lg: url('./assets/mill_1500x1200.webp');
+  --padding-hero: 1rem;
+}
+
+@font-face {
+  font-family: 'Handwriting';
+  src: url('./assets/handwriting.otf') format('otf');
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100vh;
+}
+
+body {
+  background-image: var(--image-bg-sm);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-bg);
+  font-size: var(--font-size-body-sm);
+  line-height: var(--line-height);
+  font-family: var(--font-family);
+  background-repeat: no-repeat;
+  background-position: center;
+  color: var(--color-font);
+  background-size: cover;
+  margin: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    background-image: var(--image-bg-md);
+    font-size: var(--font-size-body-md);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  body {
+    background-image: var(--image-bg-lg);
+  }
+}
+
+main {
+  background-color: var(--color-main);
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  height: 100vh;
+}
+
+.hero {
+  padding: var(--padding-hero);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.hero .title {
+  margin-bottom: 0.1em;
+  font-size: 3.2em;
+  margin-top: 0;
+}
+
+.hero .industry {
+  margin-bottom: 0.2em;
+  margin-top: 0;
+}
+
+.hero .owner {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.hero .headline {
+  margin-bottom: 2em;
+}
+
+.hero p {
+  margin-bottom: 0.4em;
+  font-size: 1.1em;
+  margin-top: 0;
+}
+
+.hero a {
+  text-decoration: underline dotted;
+  color: inherit;
+}
+
+.hero a:hover,
+.hero a:focus-visible {
+  background-color: white;
+  outline-color: white;
+  outline-style: solid;
+  outline-width: 0.2em;
+  outline-offset: 0;
+  color: black;
+}

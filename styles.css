@@ -1,13 +1,16 @@
 :root {
+  --bg-color-body: black;
+  --bg-color-main: rgba(0, 0, 0, 0.7);
+  --bg-img-fabric-sm: url('./assets/fabric_520x768.webp');
+  --bg-img-fabric-md: url('./assets/fabric_1024x800.webp');
+  --bg-img-fabric-lg: url('./assets/fabric_1500x1200.webp');
+  --bg-img-mill-sm: url('./assets/mill_520x768.webp');
+  --bg-img-mill-md: url('./assets/mill_1024x800.webp');
+  --bg-img-mill-lg: url('./assets/mill_1500x1200.webp');
   --color-font: white;
-  --color-bg: black;
-  --color-main: rgba(0, 0, 0, 0.8);
   --font-size-body-sm: 120%;
   --font-size-body-md: 150%;
   --font-family: 'Handwriting', 'Courier New', Courier, monospace;
-  --image-bg-sm: url('./assets/mill_520x768.webp');
-  --image-bg-md: url('./assets/mill_1024x800.webp');
-  --image-bg-lg: url('./assets/mill_1500x1200.webp');
   --padding-hero: 1rem;
 }
 
@@ -32,10 +35,9 @@ html {
 }
 
 body {
-  background-image: var(--image-bg-sm);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--color-bg);
+  background-color: var(--bg-color-body);
   font-size: var(--font-size-body-sm);
   line-height: var(--line-height);
   font-family: var(--font-family);
@@ -48,19 +50,44 @@ body {
 
 @media only screen and (min-width: 768px) {
   body {
-    background-image: var(--image-bg-md);
     font-size: var(--font-size-body-md);
   }
 }
 
+.bg-img-fabric {
+  background-image: var(--bg-img-fabric-sm);
+}
+
+@media only screen and (min-width: 768px) {
+  .bg-img-fabric {
+    background-image: var(--bg-img-fabric-md);
+  }
+}
+
 @media only screen and (min-width: 1200px) {
-  body {
-    background-image: var(--image-bg-lg);
+  .bg-img-fabric {
+    background-image: var(--bg-img-fabric-lg);
+  }
+}
+
+.bg-img-mill {
+  background-image: var(--bg-img-mill-sm);
+}
+
+@media only screen and (min-width: 768px) {
+  .bg-img-mill {
+    background-image: var(--bg-img-mill-md);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .bg-img-mill {
+    background-image: var(--bg-img-mill-lg);
   }
 }
 
 main {
-  background-color: var(--color-main);
+  background-color: var(--bg-color-main);
   justify-content: center;
   align-items: center;
   display: grid;

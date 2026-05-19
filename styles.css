@@ -13,7 +13,7 @@
 
 @font-face {
   font-family: 'Handwriting';
-  src: url('./assets/handwriting.otf') format('otf');
+  src: url('./assets/handwriting.otf') format('opentype');
 }
 
 html {

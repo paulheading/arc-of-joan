@@ -3,10 +3,16 @@
   --bg-color-main: rgba(0, 0, 0, 0.7);
   --bg-img-fabric-sm: url('./assets/fabric_520x768.webp');
   --bg-img-fabric-md: url('./assets/fabric_1024x800.webp');
-  --bg-img-fabric-lg: url('./assets/fabric_1500x1200.webp');
+  --bg-img-fabric-lg: url('./assets/fabric_1500x1200.jpeg');
   --bg-img-mill-sm: url('./assets/mill_520x768.webp');
   --bg-img-mill-md: url('./assets/mill_1024x800.webp');
   --bg-img-mill-lg: url('./assets/mill_1500x1200.webp');
+  --bg-img-tarp1-sm: url('./assets/tarp1_520x768.webp');
+  --bg-img-tarp1-md: url('./assets/tarp1_1024x800.webp');
+  --bg-img-tarp1-lg: url('./assets/tarp1_1500x1200.jpeg');
+  --bg-img-tarp2-sm: url('./assets/tarp2_520x768.webp');
+  --bg-img-tarp2-md: url('./assets/tarp2_1024x800.webp');
+  --bg-img-tarp2-lg: url('./assets/tarp2_1500x1200.webp');
   --color-font: white;
   --font-size-body-sm: 120%;
   --font-size-body-md: 150%;
@@ -83,6 +89,38 @@ body {
 @media only screen and (min-width: 1200px) {
   .bg-img-mill {
     background-image: var(--bg-img-mill-lg);
+  }
+}
+
+.bg-img-tarp1 {
+  background-image: var(--bg-img-tarp1-sm);
+}
+
+@media only screen and (min-width: 768px) {
+  .bg-img-tarp1 {
+    background-image: var(--bg-img-tarp1-md);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .bg-img-tarp1 {
+    background-image: var(--bg-img-tarp1-lg);
+  }
+}
+
+.bg-img-tarp2 {
+  background-image: var(--bg-img-tarp2-sm);
+}
+
+@media only screen and (min-width: 768px) {
+  .bg-img-tarp2 {
+    background-image: var(--bg-img-tarp2-md);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .bg-img-tarp2 {
+    background-image: var(--bg-img-tarp2-lg);
   }
 }
 

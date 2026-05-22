@@ -1,0 +1,80 @@
+.height-100 {
+  height: 100vh;
+  height: 100dvh;
+}
+
+.bg-img-fabric {
+  background-image: var(--bg-img-fabric-sm);
+}
+
+@media only screen and (min-width: 768px) {
+  .bg-img-fabric {
+    background-image: var(--bg-img-fabric-md);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .bg-img-fabric {
+    background-image: var(--bg-img-fabric-lg);
+  }
+}
+
+.bg-img-mill {
+  background-image: var(--bg-img-mill-sm);
+}
+
+@media only screen and (min-width: 768px) {
+  .bg-img-mill {
+    background-image: var(--bg-img-mill-md);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .bg-img-mill {
+    background-image: var(--bg-img-mill-lg);
+  }
+}
+
+.bg-img-tarp1 {
+  background-image: var(--bg-img-tarp1-sm);
+}
+
+@media only screen and (min-width: 768px) {
+  .bg-img-tarp1 {
+    background-image: var(--bg-img-tarp1-md);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .bg-img-tarp1 {
+    background-image: var(--bg-img-tarp1-lg);
+  }
+}
+
+.bg-img-tarp2 {
+  background-image: var(--bg-img-tarp2-sm);
+}
+
+@media only screen and (min-width: 768px) {
+  .bg-img-tarp2 {
+    background-image: var(--bg-img-tarp2-md);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .bg-img-tarp2 {
+    background-image: var(--bg-img-tarp2-lg);
+  }
+}
+
+.bg-black {
+  background-color: black;
+}
+
+.bg-black-0-7 {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.bg-black-0-3 {
+  background-color: rgba(0, 0, 0, 0.3);
+}

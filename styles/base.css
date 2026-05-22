@@ -1,0 +1,35 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-color-body);
+  font-size: var(--font-size-body-sm);
+  line-height: var(--line-height);
+  font-family: var(--font-family);
+  background-repeat: no-repeat;
+  background-position: center;
+  color: var(--color-font);
+  background-size: cover;
+  margin: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    font-size: var(--font-size-body-md);
+  }
+}
+
+main {
+  justify-content: center;
+  align-items: center;
+  display: grid;
+}

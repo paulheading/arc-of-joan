@@ -67,14 +67,18 @@
   }
 }
 
-.bg-black {
-  background-color: black;
+.bg-black-0-4 {
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .bg-black-0-7 {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
-.bg-black-0-3 {
-  background-color: rgba(0, 0, 0, 0.3);
+.bg-black {
+  background-color: black;
+}
+
+.display-none {
+  display: none;
 }

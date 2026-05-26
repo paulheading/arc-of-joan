@@ -27,22 +27,9 @@
 
     <!-- Theme colour (browser UI chrome on mobile) -->
     <meta name="theme-color" content="#000000" />
-
-    <!-- Open Graph / WhatsApp / Facebook -->
-    <meta property="og:title" content="Arc of Joan" />
-    <meta property="og:description" content="Textiles and Interiors. Led by Joanne Brierley. Portfolio and shop in the works." />
-    <meta property="og:image" content="https://arcofjoan.netlify.app/assets/og-image.jpg" />
-    <meta property="og:url" content="https://arcofjoan.netlify.app/" />
-    <meta property="og:type" content="website" />
-
-    <!-- Optional: Twitter/X cards -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Arc of Joan" />
-    <meta name="twitter:description" content="Textiles and Interiors. Led by Joanne Brierley. Portfolio and shop in the works." />
-    <meta name="twitter:image" content="https://arcofjoan.netlify.app/assets/og-image.jpg" />
   </head>
-  <body class="height-100 bg-img-mill">
-    <main class="height-100 bg-black-0-7">
+  <body class="height-100 bg-img-tarp1">
+    <main class="height-100 bg-black-0-4">
       <div class="hero">
         <div class="headline">
           <h1 class="title">Arc of Joan</h1>
@@ -59,7 +46,40 @@
             <a target="_blank" href="https://www.instagram.com/arcofjoandesign">ArcOfJoanDesign</a>
           </p>
         </div>
+        <div class="signup">
+          <form name="contact" method="POST" data-netlify="true">
+            <p class="cta">Be the first to hear AOJ news</p>
+            <p>
+              <label for="your-name">Your Name:</label>
+              <input id="your-name" type="text" name="name" />
+            </p>
+            <p class="alert alert-error alert-empty-name display-none" role="alert">Name must be filled out</p>
+            <p>
+              <label for="your-email">Your Email:</label>
+              <input id="your-email" type="email" name="email" />
+            </p>
+            <p class="alert alert-error alert-empty-email display-none" role="alert">Email must be filled out</p>
+            <p class="alert alert-error alert-invalid-email display-none" role="alert">Email address is not valid</p>
+            <p style="display: none">
+              <label>
+                Don't fill this out if you're human:
+                <input name="bot-field" />
+              </label>
+            </p>
+            <p>
+              <button type="submit" name="send" class="pushable">
+                <span class="front">Send</span>
+              </button>
+            </p>
+          </form>
+          <p class="alert alert-success alert-submit-success display-none" role="alert">
+            <span>Thanks! You're on the list</span>
+            <button class="close">X</button>
+          </p>
+        </div>
       </div>
     </main>
   </body>
 </html>
+
+<script src="./form.js"></script>

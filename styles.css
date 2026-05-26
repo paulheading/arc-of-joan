@@ -49,3 +49,148 @@
   outline-offset: 0;
   color: black;
 }
+
+.hero .signup {
+  margin-top: 2em;
+}
+
+.hero .signup p.cta {
+  font-size: 1.25em;
+}
+
+form [type='text'],
+form [type='email'] {
+  background-color: transparent;
+  border-color: white;
+  border-style: dotted;
+  padding: 0.4em;
+  color: inherit;
+  width: 100%;
+}
+
+form input[type='text']:hover,
+form input[type='text']:focus-visible,
+form input[type='email']:hover,
+form input[type='email']:focus-visible {
+  background-color: rgba(0, 0, 0, 0.3);
+  outline-color: white;
+  outline-style: dotted;
+  outline-offset: -2px;
+  outline-width: 2px;
+}
+
+form p {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  gap: 0.4em;
+}
+
+form p.alert {
+  justify-content: center;
+}
+
+p.alert {
+  border-color: inherit;
+  border-style: dotted;
+  text-align: center;
+  border-width: 2px;
+  padding: 0.2em;
+}
+
+p.alert-error {
+  background-color: var(--color-status-error-10-lighten);
+  color: var(--color-status-error);
+}
+
+p.alert-success {
+  background-color: var(--color-status-success-10-lighten);
+  color: var(--color-status-success);
+}
+
+p.alert-submit-success {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.signup p.display-none {
+  display: none;
+}
+
+form input,
+form button {
+  appearance: none;
+}
+
+form label {
+  flex-shrink: 0;
+}
+
+button {
+  text-transform: uppercase;
+  font-family: inherit;
+  font-weight: bold;
+  appearance: none;
+  cursor: pointer;
+  font-size: 1em;
+  color: inherit;
+  border: none;
+}
+
+form button {
+  width: 100%;
+}
+
+button.pushable:hover,
+button.pushable:focus-visible {
+  background-color: white;
+  outline-style: none;
+}
+
+button.pushable:hover .front,
+button.pushable:focus-visible .front {
+  background-color: #323232;
+  border-color: currentColor;
+  color: white;
+}
+
+button.pushable {
+  background-color: black;
+  outline-offset: 4px;
+  margin-top: 6px;
+  padding: 0;
+}
+
+button.pushable .front {
+  transform: translateY(-6px);
+  border-color: currentColor;
+  background-color: white;
+  border-style: dotted;
+  border-width: 2px;
+  padding: 0.2em;
+  display: block;
+  color: black;
+}
+
+button.pushable:active .front {
+  transform: translateY(-2px);
+}
+
+button.close {
+  background-color: var(--color-status-success);
+  color: var(--color-status-success-10-lighten);
+  display: inline-block;
+  padding-right: 0.2em;
+  padding-left: 0.2em;
+  width: initial;
+}
+
+button.close:hover,
+button.close:focus-visible {
+  color: var(--color-status-success);
+  background-color: transparent;
+  outline-color: currentColor;
+  outline-style: dotted;
+  outline-width: 2px;
+}

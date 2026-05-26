@@ -13,6 +13,15 @@
   --bg-img-tarp2-md: url('../assets/tarp2_1024x800.webp');
   --bg-img-tarp2-lg: url('../assets/tarp2_1500x1200.webp');
   --color-font: white;
+  --color-status-error: #893434;
+  --color-status-error-10-lighten: color-mix(in oklab, var(--color-status-error) 10%, white);
+  --color-status-error-40-lighten: color-mix(in oklab, var(--color-status-error) 40%, white);
+  --color-status-neutral: #006ebd;
+  --color-status-neutral-10-lighten: color-mix(in oklab, var(--color-status-neutral) 10%, white);
+  --color-status-neutral-40-lighten: color-mix(in oklab, var(--color-status-neutral) 40%, white);
+  --color-status-success: #427b42;
+  --color-status-success-10-lighten: color-mix(in oklab, var(--color-status-success) 10%, white);
+  --color-status-success-40-lighten: color-mix(in oklab, var(--color-status-success) 40%, white);
   --font-size-body-sm: 120%;
   --font-size-body-md: 150%;
   --font-family: 'Handwriting', 'Courier New', Courier, monospace;

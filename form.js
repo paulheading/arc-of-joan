@@ -50,4 +50,5 @@ form.addEventListener('submit', function (event) {
 closeSuccess?.addEventListener('click', function () {
   form?.classList.remove('display-none')
   alerts['success']?.classList.add('display-none')
+  form?.reset()
 })

@@ -35,6 +35,10 @@
   margin-top: 0;
 }
 
+.hero p.margin-top-0-8 {
+  margin-top: 0.8em;
+}
+
 .hero a {
   text-decoration: underline dotted;
   color: inherit;
@@ -60,11 +64,11 @@
 
 form [type='text'],
 form [type='email'] {
-  background-color: transparent;
+  background-color: var(--bg-color-input);
   border-color: white;
   border-style: dotted;
   padding: 0.4em;
-  color: inherit;
+  color: white;
   width: 100%;
 }
 
@@ -72,11 +76,12 @@ form input[type='text']:hover,
 form input[type='text']:focus-visible,
 form input[type='email']:hover,
 form input[type='email']:focus-visible {
-  background-color: rgba(0, 0, 0, 0.3);
-  outline-color: white;
+  background-color: white;
+  outline-color: black;
   outline-style: dotted;
   outline-offset: -2px;
   outline-width: 2px;
+  color: black;
 }
 
 form p {
@@ -139,26 +144,22 @@ button {
 }
 
 form button {
-  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  width: 11rem;
 }
 
 button.pushable:hover,
 button.pushable:focus-visible {
-  background-color: white;
   outline-style: none;
-}
-
-button.pushable:hover .front,
-button.pushable:focus-visible .front {
-  background-color: #323232;
-  border-color: currentColor;
-  color: white;
+  opacity: 1;
 }
 
 button.pushable {
   background-color: black;
   outline-offset: 4px;
   margin-top: 6px;
+  opacity: 0.7;
   padding: 0;
 }
 

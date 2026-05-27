@@ -1,7 +1,6 @@
 :root {
   --bg-color-body: black;
-  --bg-color-input: #666666;
-  --bg-color-send: #cccccc;
+  --bg-color-input: rgba(255, 255, 255, 0.2);
   --bg-img-fabric-sm: url('../assets/fabric_520x768.webp');
   --bg-img-fabric-md: url('../assets/fabric_1024x800.webp');
   --bg-img-fabric-lg: url('../assets/fabric_1500x1200.jpeg');
